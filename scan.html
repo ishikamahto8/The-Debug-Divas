@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>NutriWise AI | Scan Food</title>
+
+<link rel="stylesheet" href="scan.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<i class="fa-solid fa-leaf"></i>
+
+<div>
+
+<h2>NutriWise AI</h2>
+
+<p>Scan. Analyze. Choose Wisely.</p>
+
+</div>
+
+</div>
+
+<ul>
+
+<li><a href="dashboard.html">Dashboard</a></li>
+
+<li><a href="history.html">History</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>📷 Scan Your Food</h1>
+
+<p>Upload a food image or nutrition label and let AI analyze it.</p>
+
+</section>
+
+<!-- Upload Box -->
+
+<section class="upload-section">
+
+<div class="upload-box">
+
+<i class="fa-solid fa-cloud-arrow-up upload-icon"></i>
+
+<h2>Drag & Drop Your Image</h2>
+
+<p>or click below to upload</p>
+
+<input type="file" id="fileInput" accept="image/*" hidden>
+
+<button id="uploadBtn">Upload Image</button>
+
+</div>
+
+</section>
+
+
+<button id="uploadBtn">Upload Image</button>
+<div class="button-group">
+
+<button id="cameraBtn">
+<i class="fa-solid fa-camera"></i>
+Open Camera
+</button>
+
+<button id="manualBtn">
+<i class="fa-solid fa-keyboard"></i>
+Manual Entry
+</button>
+
+</div>
+
+<br>
+
+<button id="analyzeBtn" class="analyze-btn">
+    🤖 Analyze with AI
+</button>
+
+<div id="previewSection">
+
+    <h2>Selected Image</h2>
+
+    <img id="previewImage" src="" alt="Preview">
+
+</div>
+
+<div id="resultCard" style="display:none;">
+
+    <h2>AI Analysis Result</h2>
+
+    <div class="score-section">
+
+    <div class="score-circle">
+
+        <svg width="160" height="160">
+
+            <circle class="bg"
+                    cx="80"
+                    cy="80"
+                    r="65"></circle>
+
+            <circle class="progress"
+                    cx="80"
+                    cy="80"
+                    r="65"></circle>
+
+        </svg>
+
+        <div class="score-text">
+            <span>86</span>
+            <small>/100</small>
+        </div>
+
+    </div>
+
+</div>
+
+    <p><strong>Calories:</strong> 245 kcal</p>
+
+    <p><strong>Protein:</strong> 12 g</p>
+
+    <p><strong>Carbohydrates:</strong> 28 g</p>
+
+    <p><strong>Fat:</strong> 8 g</p>
+
+    <hr>
+
+<h3>🍎 Ingredients Detected</h3>
+
+<ul class="ingredient-list">
+
+<li>Whole Grain Oats</li>
+
+<li>Natural Honey</li>
+
+<li>Almonds</li>
+
+<li>Milk Powder</li>
+
+<li>Natural Cocoa</li>
+
+</ul>
+
+<hr>
+
+<h3>🧠 AI Ingredient Explanation</h3>
+
+<div class="ingredient-card">
+
+<h4>🌾 Whole Grain Oats</h4>
+
+<p>
+Excellent source of fiber.
+Helps digestion and keeps you full longer.
+</p>
+
+</div>
+
+<div class="ingredient-card">
+
+<h4>🥜 Almonds</h4>
+
+<p>
+Rich in healthy fats and Vitamin E.
+Supports heart health.
+</p>
+
+</div>
+
+<div class="ingredient-card">
+
+<h4>🍯 Honey</h4>
+
+<p>
+Natural sweetener.
+Consume in moderation if watching sugar intake.
+</p>
+
+</div>
+
+    <p><strong>Recommendation:</strong> ✅ Healthy choice. Good for a balanced diet.</p>
+    <hr>
+
+
+
+<h3>🌟 Healthier Alternative</h3>
+
+<p>🥗 Instead of Potato Chips, try Baked Chips or Roasted Nuts.</p>
+
+<hr>
+
+<h3>⚠️ AI Warning</h3>
+
+<p>This food contains moderate sodium. Consume in moderation.</p>
+
+<hr>
+
+<h3>🤖 AI Summary</h3>
+
+<p>
+This product is a fairly healthy choice for most people. It contains a good amount of protein but has moderate carbohydrates and sodium. Pair it with fresh fruits or vegetables for a more balanced meal.
+</p>
+
+<hr>
+
+<h3>⚖️ AI Food Comparison</h3>
+
+<div class="comparison-card">
+
+    <div class="food-box">
+        <h4>Current Food</h4>
+        <p>🍫 Chocolate Bar</p>
+        <p>Health Score: <strong>45/100</strong></p>
+    </div>
+
+    <div class="vs">VS</div>
+
+    <div class="food-box">
+        <h4>Better Choice</h4>
+        <p>🥜 Roasted Almonds</p>
+        <p>Health Score: <strong>92/100</strong></p>
+    </div>
+
+</div>
+
+<p class="comparison-result">
+🤖 AI Recommendation: Roasted Almonds provide more protein, healthy fats, and fiber while containing much less added sugar.
+</p>
+
+<div class="confidence-card">
+    <h3>🎯 AI Confidence</h3>
+    <div class="confidence-bar">
+        <div class="confidence-fill"></div>
+    </div>
+    <p>95% Confidence</p>
+</div>
+
+<hr>
+
+<div class="tips-card">
+    <h3>💡 Nutrition Tips</h3>
+    <ul>
+        <li>Eat with fresh vegetables.</li>
+        <li>Drink plenty of water.</li>
+        <li>Avoid eating late at night.</li>
+    </ul>
+</div>
+
+<hr>
+
+<div class="action-buttons">
+    <button id="saveBtn">💾 Save Report</button>
+    <button id="downloadBtn">📄 Download PDF</button>
+    <button onclick="location.reload()">🔄 Scan Again</button>
+</div>
+
+</div>
+
+<script src="scan.js"></script>
+</body>
+</html>

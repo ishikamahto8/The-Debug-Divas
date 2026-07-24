@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriWise AI | Dashboard</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i>
+            <span>NutriWise AI</span>
+        </div>
+
+        <ul class="nav-links">
+
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="scan.html">
+                    <i class="fa-solid fa-camera"></i>
+                    Scan Food
+                </a>
+            </li>
+
+            <li>
+                <a href="history.html">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    History
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html">
+                    <i class="fa-solid fa-circle-info"></i>
+                    About
+                </a>
+            </li>
+
+        </ul>
+
+        <div class="profile">
+
+            <img src="https://i.pravatar.cc/45" alt="Profile">
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section will come next -->
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
+<!-- Hero Section will come next -->
+ <!-- ================= HERO SECTION ================= -->
+
+<section class="hero">
+
+    <div class="hero-left">
+
+        <h1>
+            👋 Welcome Back,
+            <span>Suparba!</span>
+        </h1>
+
+        <p>
+            Ready to make a smarter food choice today?
+            Analyze nutrition labels instantly with AI and receive
+            personalized health recommendations.
+        </p>
+
+        <a href="scan.html">
+    <button class="scan-btn">
+        <i class="fa-solid fa-camera"></i>
+        Scan Food Now
+    </button>
+</a>
+
+    </div>
+
+    <div class="hero-right">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png"
+             alt="Healthy Food">
+
+    </div>
+
+</section>
+<!-- ================= QUICK ACTIONS ================= -->
+
+<section class="quick-actions">
+
+    <div class="card">
+        <i class="fa-solid fa-camera"></i>
+        <h3>Scan Food</h3>
+        <p>Upload a nutrition label and get AI-powered analysis.</p>
+
+        <a href="scan.html">
+            <button>Scan Now</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-keyboard"></i>
+        <h3>Manual Entry</h3>
+        <p>Enter food details manually for instant analysis.</p>
+        <button>Open</button>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <h3>History</h3>
+        <p>View your previous food scans and recommendations.</p>
+
+        <a href="history.html">
+            <button>View</button>
+        </a>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-lightbulb"></i>
+        <h3>Daily Tip</h3>
+        <p>Read a healthy nutrition tip generated for today.</p>
+        <button>Read</button>
+    </div>
+
+</section>
+<!-- ================= WELLNESS SUMMARY ================= -->
+
+<section class="summary">
+
+    <h2>📊 Wellness Summary</h2>
+
+    <div class="summary-grid">
+
+        <div class="summary-card">
+            <i class="fa-solid fa-bullseye"></i>
+            <h3>Health Goal</h3>
+            <p>Weight Management</p>
+        </div>
+
+        <div class="summary-card">
+            <i class="fa-solid fa-camera"></i>
+            <h3>Total Scans</h3>
+            <h1 id="scanCount">18</h1>
+        </div>
+
+        <div class="summary-card">
+            <i class="fa-solid fa-heart-circle-check"></i>
+            <h3>Healthy Choices</h3>
+            <h1 id="healthyCount">15</h1>
+        </div>
+
+        <div class="summary-card">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Last Scan</h3>
+            <p>Today</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= AI NUTRITION TIP ================= -->
+
+<section class="tip-history">
+
+    <!-- Daily Tip -->
+
+    <div class="tip-card">
+
+        <h2>💡 Today's AI Nutrition Tip</h2>
+
+        <p>
+            Small healthy choices every day lead to big results.
+            Choose whole foods over processed foods whenever possible.
+        </p>
+
+    </div>
+
+    <!-- Recent Activity -->
+
+    <div class="history-card">
+
+        <h2>📜 Recent Activity</h2>
+
+        <div class="history-item">
+
+            <span>🍎 Apple</span>
+
+            <span class="healthy">Healthy</span>
+
+        </div>
+
+        <div class="history-item">
+
+            <span>🍔 Burger</span>
+
+            <span class="warning">Limit Intake</span>
+
+        </div>
+
+        <div class="history-item">
+
+            <span>🥛 Milk</span>
+
+            <span class="healthy">Good Choice</span>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= AI HEALTH SCORE ================= -->
+
+<section class="health-analysis">
+
+    <h2>🤖 AI Health Analysis</h2>
+
+    <div class="analysis-card">
+
+        <div class="circle">
+
+            <span id="healthScore">86</span>
+
+            <small>/100</small>
+
+        </div>
+
+        <h3>🟢 Excellent Choice</h3>
+
+        <ul>
+
+            <li>✔ High Protein</li>
+
+            <li>✔ Low Sugar</li>
+
+            <li>✔ Rich in Fiber</li>
+
+            <li>✔ Good for Weight Management</li>
+
+        </ul>
+
+        <button class="report-btn">
+
+            View Full AI Report
+
+        </button>
+
+    </div>
+
+</section>
+<!-- ================= WEEKLY PROGRESS ================= -->
+
+<section class="progress-section">
+
+    <h2>📈 Weekly Wellness Progress</h2>
+
+    <div class="progress-grid">
+
+        <div class="progress-card">
+
+            <h3>💧 Water Intake</h3>
+
+            <div class="progress-bar">
+                <div class="water-progress"></div>
+            </div>
+
+            <p>2.5L of 3L Completed</p>
+
+        </div>
+
+        <div class="progress-card">
+
+            <h3>🔥 Daily Calories</h3>
+
+            <div class="progress-bar">
+                <div class="calorie-progress"></div>
+            </div>
+
+            <p>1650 / 2000 kcal</p>
+
+        </div>
+
+        <div class="progress-card">
+
+            <h3>🥗 Healthy Choices</h3>
+
+            <div class="progress-bar">
+                <div class="healthy-progress"></div>
+            </div>
+
+            <p>80% Healthy Choices</p>
+
+        </div>
+
+        <div class="progress-card">
+
+            <h3>🏆 Weekly Goal</h3>
+
+            <div class="progress-bar">
+                <div class="goal-progress"></div>
+            </div>
+
+            <p>6 / 7 Days Completed</p>
+
+        </div>
+
+    </div>
+
+</section>
+<script src="dashboard.js"></script>
+<!-- ================= FLOATING AI BUTTON ================= -->
+
+<div class="ai-assistant" id="aiAssistant">
+
+    <i class="fa-solid fa-robot"></i>
+
+</div>
+
+<!-- AI Popup -->
+
+<div class="ai-popup" id="aiPopup">
+
+    <h3>🤖 NutriWise AI</h3>
+
+    <p>
+        Hi! 👋
+        I'm your AI Nutrition Assistant.
+        How can I help you make a healthier food choice today?
+    </p>
+
+    <button id="closePopup">
+        Close
+    </button>
+
+</div>
+
+<section class="card nutrition-summary">
+    <h2>Daily Nutrition Summary</h2>
+
+    <div class="summary-grid">
+        <div class="summary-item">
+            <h3>Calories</h3>
+            <p>1850 kcal</p>
+        </div>
+
+        <div class="summary-item">
+            <h3>Protein</h3>
+            <p>75 g</p>
+        </div>
+
+        <div class="summary-item">
+            <h3>Carbs</h3>
+            <p>220 g</p>
+        </div>
+
+        <div class="summary-item">
+            <h3>Fats</h3>
+            <p>55 g</p>
+        </div>
+    </div>
+</section>
+
+<!-- ================= AI RECOMMENDATION ================= -->
+
+<section class="recommendation-section">
+
+    <h2>🧠 Personalized AI Recommendation</h2>
+
+    <div class="recommendation-card">
+
+        <div class="recommendation-icon">
+            🤖
+        </div>
+
+        <div class="recommendation-content">
+
+            <h3>Today's Recommendation</h3>
+
+            <p>
+                Based on your goal of <strong>Weight Management</strong>,
+                choose foods rich in protein and fiber today.
+                Try to avoid sugary drinks and highly processed snacks.
+            </p>
+
+            <button class="recommend-btn">
+                View Full Recommendation
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="quick-actions card">
+    <h2>Quick Actions</h2>
+
+    <div class="action-buttons">
+        <a href="scan.html">
+    <button>Scan Now</button>
+</a>
+        <button class="action-btn">📊 View Reports</button>
+        <button class="action-btn">❤️ Healthy Recipes</button>
+        <button class="action-btn">🤖 AI Assistant</button>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h3>🌿 NutriWise AI</h3>
+
+    <p>
+        Scan. Analyze. Choose Wisely.
+        AI-powered nutrition decisions for a healthier future.
+    </p>
+
+    <p class="copyright">
+        © 2026 NutriWise AI | Built for VibeForge Hackathon
+    </p>
+
+</footer>
+

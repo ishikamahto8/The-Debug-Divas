@@ -1,0 +1,271 @@
+/* Google Font */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #F4F9FC;
+    color: #333;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #22C55E;
+}
+
+.logo i {
+    font-size: 28px;
+}
+
+.login-btn {
+    text-decoration: none;
+    background: #22C55E;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background: #16A34A;
+}
+
+/* ================= HERO SECTION ================= */
+.hero {
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #22C55E, #38BDF8);
+    color: white;
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
+}
+
+.hero-left {
+    width: 55%;
+}
+
+.hero-left h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-left span {
+    color: #FFF176;
+}
+
+.hero-left p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.cta-btn {
+    padding: 16px 35px;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    color: #22C55E;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cta-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.hero-right img {
+    width: 350px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ================= PROBLEM VS SOLUTION ================= */
+.problem-solution {
+    width: 90%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.problem-solution h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    width: 45%;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card i {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.problem i {
+    color: #EF4444;
+}
+
+.solution i {
+    color: #22C55E;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* ================= CORE FEATURES ================= */
+.features {
+    width: 90%;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.15);
+}
+
+.feature-card i {
+    font-size: 45px;
+    color: #38BDF8;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    margin-bottom: 15px;
+    color: #222;
+    font-size: 22px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    margin-top: 80px;
+    background: #0F172A;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+footer h3 {
+    font-size: 24px;
+    color: #22C55E;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #94A3B8;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #64748B;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-left {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .cta-btn {
+        margin: 0 auto;
+    }
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 100%;
+    }
+}

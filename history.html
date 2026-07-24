@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriWise AI | History</title>
+
+    <link rel="stylesheet" href="history.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+    <div class="logo">
+        <i class="fa-solid fa-leaf"></i>
+
+        <div>
+            <h2>NutriWise AI</h2>
+            <p>History</p>
+        </div>
+    </div>
+
+    <ul>
+
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+        <li><a href="scan.html">Scan Food</a></li>
+
+        <li><a href="history.html">History</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <h1>📜 Scan History</h1>
+
+    <p>
+        View your previous food scans, AI analysis, and health reports.
+    </p>
+
+</section>
+
+<section class="stats-section">
+
+    <div class="stat-card">
+        <i class="fa-solid fa-camera"></i>
+        <h2>24</h2>
+        <p>Total Scans</p>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-heart"></i>
+        <h2>18</h2>
+        <p>Healthy Foods</p>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-triangle-exclamation"></i>
+        <h2>6</h2>
+        <p>Needs Improvement</p>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-chart-line"></i>
+        <h2>87%</h2>
+        <p>Average Health Score</p>
+    </div>
+
+</section>
+
+<section class="search-section">
+
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search scanned foods...">
+
+    <select id="filterSelect">
+
+        <option>All Foods</option>
+
+        <option>Healthy</option>
+
+        <option>Moderate</option>
+
+        <option>Needs Improvement</option>
+
+    </select>
+
+</section>
+
+<section class="history-container">
+
+    <!-- Card 1 -->
+    <div class="history-card">
+
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=600"
+             alt="Healthy Salad">
+
+        <div class="history-content">
+
+            <h2>Healthy Salad</h2>
+
+            <p><strong>⭐ Health Score:</strong> 95/100</p>
+
+            <p><strong>🔥 Calories:</strong> 220 kcal</p>
+
+            <p><strong>🤖 AI Recommendation:</strong> Excellent choice for a balanced diet.</p>
+
+            <p><strong>📅 Scanned:</strong> 12 July 2026</p>
+
+            <div class="history-buttons">
+                <a href="scan.html" onclick="viewFood('salad')">
+                    <button class="view-btn">View Details</button></a>
+                <button class="delete-btn">Delete</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Card 2 -->
+
+    <div class="history-card">
+
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600"
+             alt="Pizza">
+
+        <div class="history-content">
+
+            <h2>Pizza</h2>
+
+            <p><strong>⭐ Health Score:</strong> 58/100</p>
+
+            <p><strong>🔥 Calories:</strong> 650 kcal</p>
+
+            <p><strong>🤖 AI Recommendation:</strong> Eat occasionally and pair with salad.</p>
+
+            <p><strong>📅 Scanned:</strong> 10 July 2026</p>
+
+            <div class="history-buttons">
+                <a href="scan.html" onclick="viewFood('pizza')">
+                    <button class="view-btn">View Details</button></a>
+
+                <button class="delete-btn">Delete</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+
+<script src="history.js"></script>
+
+</html>

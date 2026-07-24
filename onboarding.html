@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScan AI | Setup Your Profile</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="onboarding.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i>
+            <span>NutriScan AI</span>
+        </div>
+    </nav>
+
+    <div class="onboarding-container">
+        <div class="onboarding-box">
+            
+            <div class="onboarding-header">
+                <h2>Let's Personalize Your Experience</h2>
+                <p>Tell us a bit about yourself so our AI can give you the best recommendations.</p>
+            </div>
+
+            <form action="dashboard.html" class="onboarding-form">
+                
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number" placeholder="e.g. 25" required min="10" max="120">
+                    </div>
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select required>
+                            <option value="" disabled selected>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="input-group">
+                        <label>Height (cm)</label>
+                        <input type="number" placeholder="e.g. 175" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Weight (kg)</label>
+                        <input type="number" placeholder="e.g. 70" required>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Primary Health Goal</label>
+                    <div class="radio-group">
+                        <label class="radio-card">
+                            <input type="radio" name="goal" value="weight_loss" required>
+                            <div class="card-content">
+                                <i class="fa-solid fa-arrow-trend-down"></i>
+                                <span>Weight Loss</span>
+                            </div>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="goal" value="muscle_gain">
+                            <div class="card-content">
+                                <i class="fa-solid fa-dumbbell"></i>
+                                <span>Muscle Gain</span>
+                            </div>
+                        </label>
+                        <label class="radio-card">
+                            <input type="radio" name="goal" value="general_fitness">
+                            <div class="card-content">
+                                <i class="fa-solid fa-heart-pulse"></i>
+                                <span>General Fitness</span>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Dietary Restrictions / Allergens</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox" name="allergen" value="dairy"> Dairy-Free</label>
+                        <label class="checkbox-label"><input type="checkbox" name="allergen" value="gluten"> Gluten-Free</label>
+                        <label class="checkbox-label"><input type="checkbox" name="allergen" value="peanuts"> Peanut Allergy</label>
+                        <label class="checkbox-label"><input type="checkbox" name="allergen" value="soy"> Soy Allergy</label>
+                        <label class="checkbox-label"><input type="checkbox" name="allergen" value="vegan"> Vegan</label>
+                    </div>
+                </div>
+
+                <div class="input-group full-width">
+                    <label>Existing Medical Conditions</label>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label"><input type="checkbox" name="disease" value="diabetes"> Diabetes</label>
+                        <label class="checkbox-label"><input type="checkbox" name="disease" value="hypertension"> Hypertension</label>
+                        <label class="checkbox-label"><input type="checkbox" name="disease" value="heart_disease"> Heart Disease</label>
+                        <label class="checkbox-label"><input type="checkbox" name="disease" value="celiac"> Celiac</label>
+                        <label class="checkbox-label"><input type="checkbox" name="disease" value="none"> None</label>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-btn">Complete Setup <i class="fa-solid fa-arrow-right"></i></button>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="onboarding.js"></script>
+</body>
+</html>
