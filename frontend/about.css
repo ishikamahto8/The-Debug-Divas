@@ -46,6 +46,16 @@ body{
 
 }
 
+.logo-img {
+
+    height: 38px;
+
+    width: auto;
+
+    object-fit: contain;
+
+}
+
 .logo i{
 
     font-size:34px;

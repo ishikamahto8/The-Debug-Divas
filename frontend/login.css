@@ -31,6 +31,15 @@ body {
     margin-bottom: 30px;
 }
 
+.logo-img {
+    width: auto;
+    object-fit: contain;
+}
+
+img.logo-icon {
+    height: 55px;
+}
+
 .logo-icon {
     font-size: 45px;
     color: #22C55E;

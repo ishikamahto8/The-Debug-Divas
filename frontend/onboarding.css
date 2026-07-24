@@ -30,6 +30,12 @@ body {
     color: #22C55E;
 }
 
+.logo-img {
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+}
+
 /* Container */
 .onboarding-container {
     width: 100%;
